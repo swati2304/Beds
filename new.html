@@ -1,10 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Pratice Git</title>
+    <title>Calculator</title>
+    <style>
+        .container {
+            background-color: #8a8a5c;
+            height: 600px;
+            width: 350px;
+            border-radius: 0px 40px 0px 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            padding: 10px;
+        }
+
+        .screen {
+            background-color: #e0e0d1;
+            text-decoration: none;
+            height: 60px;
+            width: 300px;
+            border-radius: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 35px;
+            font-size: 40px;
+            padding: 5px;
+        }
+
+        .small-screen-container {
+            display: flex;
+            justify-content: end;
+        }
+
+        .small-screen {
+            height: 30px;
+            width: 30px;
+            background-color: #e0e0d1;
+            border: 1px solid;
+            margin-top: 10px;
+
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .cal-button {
+            font-size: 25px;
+            height: 60px;
+            width: 60px;
+            background-color: rgb(70, 14, 123);
+            border-radius: 30px;
+            margin: 10px;
+            box-shadow: 3px 3px 5px 5px #cc6699;
+            color: #a6ff4d;
+        }
+
+        .cal-button:hover {
+            background-color: rgb(205, 208, 18);
+            cursor: pointer;
+            transition: 2s;
+            border-radius: 10px;
+        }
+
+        .cal-button-x {
+            background-color: #666699;
+        }
+
+        .calculator {
+            height: 650px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px 5px rgb(128, 122, 122);
+            background-color: rgb(217, 226, 234);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .black-screen {
+            height: 180px;
+            width: 350px;
+            background-color: black;
+            border: 4px solid white;
+            border-radius: 10px;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 60px;
+            margin: 20px;
+            box-shadow: 3px 3px 6px 3px rgb(241, 208, 208);
+            color: white;
+            text-align: center;
+        }
+
+        .button-home {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-home-cal {
+            height: 40px;
+            width: 60px;
+            border: 2px solid grey;
+            border-radius: 50%;
+            margin: 8px;
+            font-size: 17px;
+            font-style: italic;
+            box-shadow: 4px 4px 8px 4px darkgray;
+        }
+
+        .design {
+            height: 50px;
+            width: 500px;
+            font-size: 30px;
+        }
+
+        .cal-b {
+            background-color: orange;
+            margin-left: 22px;
+        }
+
+        .img-home {
+            height: 25px;
+            width: 35px;
+            padding: 5px;
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Pratice of GitHub</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nostrum.</p>
+    <div class="container">
+        <p>CASSIO</p>
+        <input type="text" class="screen" />
+        <div class="small-screen-container">
+            <div class="small-screen"></div>
+            <div class="small-screen"></div>
+            <div class="small-screen"></div>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">MR</button>
+            <button class="cal-button">M-</button>
+            <button class="cal-button">M+</button>
+            <button class="cal-button cal-button-x">/</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">7</button>
+            <button class="cal-button">8</button>
+            <button class="cal-button">9</button>
+            <button class="cal-button cal-button-x">x</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">4</button>
+            <button class="cal-button">5</button>
+            <button class="cal-button">6</button>
+            <button class="cal-button cal-button-x">-</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">1</button>
+            <button class="cal-button">2</button>
+            <button class="cal-button">3</button>
+            <button class="cal-button cal-button-x">+</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button cal-button-x">0</button>
+            <button class="cal-button cal-button-x">.</button>
+            <button class="cal-button cal-button-x">=</button>
+            <button class="cal-button cal-button-x">%</button>
+        </div>
+    </div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <div class="calculator">
+        <input type="text" class="black-screen" />
+        <div class="design">
+            <button class="btn-home-cal cal-b">
+                <img src="https://img.icons8.com/?size=1x&id=i6fZC6wuprSu&format=png" class="img-home" />
+            </button>
+            <button class="btn-home-cal cal-b">
+                <img src="https://img.icons8.com/?size=1x&id=37667&format=png" class="img-home" />
+            </button>
+            <button class="btn-home-cal cal-b">
+                <img src="https://img.icons8.com/?size=1x&id=hrOxx1b4YroM&format=png" class="img-home" />
+            </button>a
+            <button class="btn-home-cal cal-b">
+                <img src="https://img.icons8.com/?size=1x&id=9451&format=png" class="img-home" />
+            </button>
+        </div>
+        </br>
+        <div class="button-home">
+            <button class="btn-home-cal">Mode</button>
+            <button class="btn-home-cal">Apps</button>
+            <button class="btn-home-cal">Shift</button>
+            <button class="btn-home-cal">OK</button>
+            <button class="btn-home-cal">Solve</button>
+            <button class="btn-home-cal">Var</button>
+        </div>
+        <div class="button-home">
+            <button class="btn-home-cal">Del</button>
+            <button class="btn-home-cal">Clr</button>
+            <button class="btn-home-cal">sin</button>
+            <button class="btn-home-cal">cos</button>
+            <button class="btn-home-cal">tan</button>
+            <button class="btn-home-cal">In</button>
+        </div>
+        <div class="button-home">
+            <button class="btn-home-cal">x,n,t</button>
+            <button class="btn-home-cal">x2</button>
+            <button class="btn-home-cal">Ans</button>
+            <button class="btn-home-cal">Exp</button>
+            <button class="btn-home-cal">Aps</button>
+            <button class="btn-home-cal">M+</button>
+        </div>
+        <div class="button-home">
+            <button class="btn-home-cal">fax</button>
+            <button class="btn-home-cal">hyp</button>
+            <button class="btn-home-cal">{}</button>
+            <button class="btn-home-cal">[]</button>
+            <button class="btn-home-cal">Rec</button>
+            <button class="btn-home-cal">Pol</button>
+        </div>
+        <div class="button-home">
+            <button class="btn-home-cal">0</button>
+            <button class="btn-home-cal">9</button>
+            <button class="btn-home-cal">8</button>
+            <button class="btn-home-cal">7</button>
+            <button class="btn-home-cal">6</button>
+            <button class="btn-home-cal">5</button>
+        </div>
+        <div class="button-home">
+            <button class="btn-home-cal">-</button>
+            <button class="btn-home-cal">++</button>
+            <button class="btn-home-cal">1</button>
+            <button class="btn-home-cal">2</button>
+            <button class="btn-home-cal">3</button>
+            <button class="btn-home-cal">4</button>
+        </div>
+    </div>
+    </br>
+    </br>
 </body>
 </html>
